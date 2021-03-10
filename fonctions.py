@@ -39,6 +39,11 @@ def person_number(participants):
 
 
 def p_aleatoire(participants):
+    """
+    La fonction permet un partage aléatoire entre les participants
+    :param participants:
+    :return: 
+    """
     num_to_select = person_number(participants)
     num_of_group = len(participants) // num_to_select
     group = []
@@ -86,6 +91,11 @@ def question_niveau():
 
 
 def p_meme_niveau(participants):
+    """
+    Cette fonction permet de répartir les participants selon un même niveau de compétence
+    :param participants:
+    :return:
+    """
     num_to_select = person_number(participants)
     num_of_group = len(participants) // num_to_select
     group_p = []
