@@ -1,14 +1,10 @@
-import random as rd
-import fonctions as fc
-import os
 import pdb
-import logging as lg
+import fonctions as fc
 
 participants=[]
 
 
 if __name__ == "__main__":
-
     print("Who are the participants?")
     participant1= input()
     pdb.set_trace()
@@ -23,5 +19,4 @@ if __name__ == "__main__":
     print("Do you want to add a skill?")
 
     print(fc.add_competence())
-
 main()
