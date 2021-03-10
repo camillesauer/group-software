@@ -91,18 +91,22 @@ def p_meme_niveau(participants):
     for k in range (len(participants)-len(group_p)*num_to_select): #On regarde s'il reste des personnes dans le groupe participants
         group_p[-1-k%len(group_p)].append(p_2[-1-k][0]) #On les répartit 1 par 1 dans les groupes déjà existants en commençant par les plus proches en niveau (k%len pour par exemple groupes de 4 avec 11 personnes : on veut que répartir dans les 2 groupes déjà existants)
     return group_p    
-    
-print("Who are the participants?")    
-participant1= input()
 
-add_participants(participant1)
+if __name__ == "__main__":
 
-print(participants)
+    print("Who are the participants?")
+    participant1= input()
 
-add_more_participants()
+    add_participants(participant1)
 
-print(participants)
+    print(participants)
 
-print("Do you want to add a skill?") 
+    add_more_participants()
 
-print(add_competence())  
+    print(participants)
+
+    print("Do you want to add a skill?")
+
+    print(add_competence())
+
+main()
